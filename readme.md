@@ -6,3 +6,5 @@ Membres groupes DRAG N DRUM :
 
 - BIARD Sofian
 
+- ALFANO Federica
+
