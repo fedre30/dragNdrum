@@ -1,3 +1,7 @@
+<?php
+require_once "src/functions.php";
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -54,15 +58,18 @@
             <div class="game-container nine columns"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt=""></div>
 
             <div class="configuration-infos three columns">
-                <div class="configuration-price">€99,00</div>
+                <div class="configuration-price"><?php getPrice(); ?>€</div>
+                <form method="get">
                 <label class="configuration-label" for="configuration-label">Durée</label>
-                <select class="configuration-duration" id="configuration-label">
+                <select class="configuration-duration" id="configuration-label" name="select">
                     <option value="0">1 jour</option>
                     <option value="1">2 jours</option>
                     <option value="2">3 jours</option>
                     <option value="3">4 jours</option>
                     <option value="4">5 jours</option>
                 </select>
+                    <input type="submit" name="submit" value="ok" />
+                </form>
                 <div class="configuration-components">
                     <h3>Composants</h3>
                     <ul class="configuration-list">
