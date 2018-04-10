@@ -1,4 +1,5 @@
 function EditList(info) {
    info.ObjectID;
-   info.NewIbject;
+   info.NewObject;
+   info.ObjectList;
 }

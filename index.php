@@ -50,7 +50,8 @@ require_once "src/functions.php";
                 assumenda aut beatae consequatur dolores doloribus ducimus earum esse eum harum ipsam, itaque nam natus
                 quis reprehenderit rerum tempora totam.
             </div>
-            <div class="six columns concept-image"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt=""></div>
+            <div class="six columns concept-image"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt="">
+            </div>
         </div>
     </div>
 </section>
@@ -63,28 +64,27 @@ require_once "src/functions.php";
             <div class="configuration-infos three columns">
                 <div class="configuration-price"><?php getPrice(); ?>€</div>
                 <form method="get">
-                <label class="configuration-label" for="configuration-label">Durée</label>
-                <select class="configuration-duration" id="configuration-label" name="select">
-                    <option value="0">1 jour</option>
-                    <option value="1">2 jours</option>
-                    <option value="2">3 jours</option>
-                    <option value="3">4 jours</option>
-                    <option value="4">5 jours</option>
-                </select>
-                    <input type="submit" name="submit" value="ok" />
-                </form>
-                <div class="configuration-components">
-                    <h3>Composants</h3>
-                    <ul class="configuration-list">
-                        <li class="configuration-item">Grande Caisse</li>
-                        <li class="configuration-item">Grande Caisse</li>
-                        <li class="configuration-item">Grande Caisse</li>
-                        <li class="configuration-item">Grande Caisse</li>
-                        <li class="configuration-item">Grande Caisse</li>
-                    </ul>
-                </div>
+                    <label class="configuration-label" for="configuration-label">Durée</label>
+                    <select class="configuration-duration" id="configuration-label" name="select">
+                        <option value="0">1 jour</option>
+                        <option value="1">2 jours</option>
+                        <option value="2">3 jours</option>
+                        <option value="3">4 jours</option>
+                        <option value="4">5 jours</option>
+                    </select>
+                    <div class="configuration-components">
+                        <h3>Composants</h3>
+                        <ul class="configuration-list">
+                            <li class="configuration-item">Grande Caisse</li>
+                            <li class="configuration-item">Grande Caisse</li>
+                            <li class="configuration-item">Grande Caisse</li>
+                            <li class="configuration-item">Grande Caisse</li>
+                            <li class="configuration-item">Grande Caisse</li>
+                        </ul>
+                    </div>
 
-                <div class="configuration-button"><a href="formulaire.php">Louer</a></div>
+                    <div class="configuration-button"><a href="formulaire.php">Louer</a></div>
+                </form>
             </div>
         </div>
     </div>
