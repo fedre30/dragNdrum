@@ -1,157 +1,62 @@
-@font-face {
-  font-family: Gotham;
-  src: url("../fonts/gotham"); }
-body {
-  font-family: Gotham, sans-serif;
-  background-color: black;
-  overflow-x: hidden; }
-
-.introduction {
-  width: 100%;
-  height: 100vh;
-  background: url("../img/david-menidrey-389997-unsplash.jpg"); }
-
-.background {
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  opacity: 0.9;
-  z-index: 1000; }
-  .background .header {
-    width: 100%; }
-    .background .header-menu {
-      float: right;
-      margin-right: 3rem; }
-    .background .header-menuItem {
-      color: white;
-      list-style: none;
-      display: inline-block;
-      margin-left: 2rem;
-      font-size: 2rem;
-      font-weight: 300;
-      margin-top: 3rem; }
-      .background .header-menuItem a {
-        text-decoration: none;
-        color: white;
-        transition: color 0.2s ease; }
-      .background .header-menuItem a:hover {
-        color: darkred; }
-  .background .name-container {
-    width: 60%;
-    height: 50vh;
-    text-align: center;
-    color: white;
-    transform: translateY(50%);
-    position: absolute;
-    left: 20%; }
-    .background .name-container .name-title {
-      text-transform: uppercase;
-      color: white;
-      font-size: 8rem;
-      font-weight: 300;
-      margin-bottom: 5rem; }
-    .background .name-container .name-paragraph {
-      font-weight: 300;
-      line-height: 3.5rem;
-      font-size: 2rem; }
-    .background .name-container .button-configuration {
-      width: 250px;
-      background-color: white;
-      border-radius: 10px;
-      color: red;
-      margin: 100px auto;
-      padding: 10px;
-      font-size: 2.5rem;
-      font-weight: 300;
-      cursor: pointer;
-      transition: color 0.1s ease; }
-    .background .name-container .button-configuration:hover {
-      background-color: #4C0001;
-      color: white; }
-    .background .name-container .arrow {
-      width: 80px;
-      margin: 30vh auto; }
-      .background .name-container .arrow img {
-        width: 100%; }
-
-.concept {
-  width: 100%;
-  height: 100vh;
-  font-weight: 300;
+.backgroundForm {
+  background-image: url('../img/wallpaper.jpg');
+  background-size: cover;
   color: white;
-  margin-top: 10vh;
-  background: linear-gradient(#070000, #4C0001, #070000); }
-  .concept-title {
-    font-size: 8rem;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: 400; }
-  .concept-text {
-    color: white;
-    font-size: 2rem;
-    line-height: 4rem;
-    margin-top: 30vh; }
-  .concept-image {
-    width: 100%;
-    height: 80vh; }
-    .concept-image img {
-      width: 100%; }
+}
 
-.configuration {
-  width: 100%;
-  height: 100vh;
-  margin-top: 10vh; }
-  .configuration-infos {
-    color: white; }
-  .configuration-label {
-    font-weight: 400;
-    font-size: 2rem; }
-  .configuration-price {
-    font-size: 4rem;
-    margin-bottom: 3rem; }
-  .configuration h3 {
-    font-size: 3rem; }
-  .configuration-item {
-    list-style: none;
-    font-weight: 300;
-    font-size: 2rem; }
-  .configuration-components {
-    margin-top: 5vh; }
-  .configuration-button {
-    width: 200px;
-    padding: 10px;
-    color: white;
-    background-color: darkred;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin-top: 10vh;
-    cursor: pointer;
-    transition: color 0.2s ease; }
-    .configuration-button a {
-      text-decoration: none;
-      color: white; }
-    .configuration-button a:hover {
-      color: #4C0001; }
-  .configuration-button:hover {
-    background-color: white;
-    color: #4C0001; }
+.backgroundForm input {
+  opacity: 0.5;
+}
 
-.game-container {
-  width: 100%; }
+.choose-title {
+  text-align: center;
+}
 
-.footer {
-  width: 100%;
-  background-color: #4C0001;
-  padding: 0.5rem; }
-  .footer .telephone {
-    margin: 2vh auto;
-    color: white;
-    text-align: center; }
-  .footer .copyright {
-    margin: 0 auto;
-    color: white;
-    text-align: center; }
+.form-title {
+  text-align: center;
+}
 
-/*# sourceMappingURL=form.css.map */
+.choose-price p {
+  width: 60%;
+}
+
+.formInfo input {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+}
+
+.type input {
+  margin-top: 35px;
+}
+
+.card {
+  margin-left: 2rem;
+}
+
+.form-send {
+  display: flex;
+  justify-content: center;
+}
+
+.form-send input {
+  color: white;
+  opacity: 1;
+}
+
+.visa-logo {
+  height: 80px;
+  margin-left: 5px;
+
+}
+
+.mc-logo {
+  margin-left: 5px;
+  height: 80px;
+}
+
+.mc-check {
+  margin-left: 20px;
+}
