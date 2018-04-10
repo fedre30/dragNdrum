@@ -13,6 +13,8 @@ require_once "src/functions.php";
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/skeleton.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
 </head>
 <body>
 <div class="background">
@@ -55,7 +57,7 @@ require_once "src/functions.php";
 <section class="configuration" id="configuration">
     <div class="container">
         <div class="row">
-            <div class="game-container nine columns"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt=""></div>
+            <div class="game-container nine columns" id="gameContainer"></div>
 
             <div class="configuration-infos three columns">
                 <div class="configuration-price"><?php getPrice(); ?>€</div>
@@ -94,10 +96,11 @@ require_once "src/functions.php";
 
 
 <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="src/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="assets/js/plugins.js"></script>
+<script src="3D/TemplateData/UnityProgress.js"></script>
+<script src="3D/Build/UnityLoader.js"></script>
+<script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum2.json", {onProgress: UnityProgress});
+</script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
