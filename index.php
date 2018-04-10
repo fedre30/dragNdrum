@@ -17,9 +17,9 @@
         <header class="header">
             <nav class="header-menu">
                 <ul class="header-menuList">
-                    <li class="header-menuItem"><a href="#">Concept</a></li>
-                    <li class="header-menuItem"><a href="#">Configuration</a></li>
-                    <li class="header-menuItem"><a href="#">Contact</a></li>
+                    <li class="header-menuItem"><a href="#concept">Concept</a></li>
+                    <li class="header-menuItem"><a href="#configuration">Configuration</a></li>
+                    <li class="header-menuItem"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -35,7 +35,7 @@
     </section>
 </div>
 
-<section class="concept">
+<section class="concept" id="concept">
     <div class="container">
         <div class="concept-title">Concept</div>
         <div class="row">
@@ -48,12 +48,12 @@
     </div>
 </section>
 
-<section class="configuration">
+<section class="configuration" id="configuration">
     <div class="container">
         <div class="row">
-            <div class="game-container eight columns"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt=""></div>
+            <div class="game-container nine columns"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt=""></div>
 
-            <div class="configuration-infos four columns">
+            <div class="configuration-infos three columns">
                 <div class="configuration-price">€99,00</div>
                 <label class="configuration-label" for="configuration-label">Durée</label>
                 <select class="configuration-duration" id="configuration-label">
@@ -79,6 +79,11 @@
         </div>
     </div>
 </section>
+
+<footer class="footer" id="contact">
+    <div class="telephone">06.67.98.56.34</div>
+    <p class="copyright">© Groupe 1</p>
+</footer>
 
 
 <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
