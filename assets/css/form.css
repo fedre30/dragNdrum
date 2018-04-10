@@ -132,11 +132,11 @@ body {
     .configuration-button a {
       text-decoration: none;
       color: white; }
+    .configuration-button a:hover {
+      color: #4C0001; }
   .configuration-button:hover {
     background-color: white;
     color: #4C0001; }
-    .configuration-button:hover a:hover {
-      color: #4C0001; }
 
 .game-container {
   width: 100%; }
@@ -154,4 +154,4 @@ body {
     color: white;
     text-align: center; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=form.css.map */

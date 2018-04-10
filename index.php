@@ -13,8 +13,9 @@ require_once "src/functions.php";
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/skeleton.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="shortcut icon" href="3D/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="3D/TemplateData/style.css">
 </head>
 <body>
 <div class="background">
@@ -83,7 +84,7 @@ require_once "src/functions.php";
                     </ul>
                 </div>
 
-                <div class="configuration-button">Louer</div>
+                <div class="configuration-button"><a href="formulaire.php">Louer</a></div>
             </div>
         </div>
     </div>
