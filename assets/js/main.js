@@ -7,6 +7,8 @@ const concept = document.querySelector('#concept');
 const configMenu = document.querySelector('.config-button');
 const contactButton = document.querySelector('.contact-button');
 const contact = document.querySelector('#contact');
+const backTop = document.querySelector('.back-to-top');
+const introduction = document.querySelector('.introduction');
 
 function animate(time) {
     requestAnimationFrame(animate);
@@ -43,6 +45,10 @@ contactButton.addEventListener('click', function () {
     tweenAnimation(contact);
 });
 
+backTop.addEventListener('click', function () {
+    tweenAnimation(introduction);
+});
+
 
 
 // UNITY
@@ -50,6 +56,7 @@ contactButton.addEventListener('click', function () {
 const listItem = document.querySelectorAll('.configuration-item');
 const price = document.querySelector('.configuration-price');
 const select = document.querySelector('select');
+
 
 
 function EditList(info) {
