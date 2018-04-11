@@ -58,6 +58,7 @@ const price = document.querySelector('.configuration-price');
 const select = document.querySelector('select');
 
 
+
 function EditList(info) {
     console.log(info);
     info.ObjectID;
