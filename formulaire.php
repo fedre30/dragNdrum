@@ -35,7 +35,7 @@
 </section>
 
 <section>
-    <form action="" method="post">
+    <form action="./src/rent.php" method="post">
         <div class="container">
             <h3 class="form-title">Facturation</h3>
                 <div class="row">
@@ -46,18 +46,18 @@
                         <label for="prenom">Prénom</label> <input type="text" name="prenom">
                     </div>
                     <div class="four columns formInfo">
-                        <label for="mail">Adresse e-mail</label> <input type="text" name="mail">
+                        <label for="mail">Adresse e-mail</label> <input type="mail" name="mail">
                     </div>
                 </div>
                 <div class="row">
                     <div class="four columns formInfo">
-                        <label for="adresse">Adresse</label> <input type="text" name="adresse">
+                        <label for="adress">Adresse</label> <input type="text" name="adress">
                     </div>
                     <div class="four columns formInfo">
                         <label for="telephone">Téléphone</label> <input type="text" name="telephone">
                     </div>
                     <div class="four columns formInfo">
-                        <label for="date">Date</label> <input type="date" name="date">
+                        <label for="day">Date</label> <input type="date" name="day">
                     </div>
                 </div>
 

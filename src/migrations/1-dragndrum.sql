@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 5.7.21, for osx10.13 (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
 --
 -- Host: localhost    Database: dragndrum
 -- ------------------------------------------------------
@@ -13,6 +13,35 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+--
+-- Table structure for table `commandes`
+--
+DROP TABLE IF EXISTS `commandes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE
+IF NOT EXISTS `commandes`
+(
+  `id_commandes` int
+(11) NOT NULL AUTO_INCREMENT,
+  `nom` varchar
+(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `prenom` varchar
+(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar
+(320) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `adress` varchar
+(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` int
+(10) unsigned DEFAULT NULL,
+  `day` date DEFAULT NULL,
+  PRIMARY KEY
+(`id_commandes`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+--
+-- Dumping data for table `commandes`
+--
 --
 -- Table structure for table `elements`
 --
@@ -122,4 +151,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-04-10  9:51:52
+-- Dump completed on 2018-04-11 14:22:09
