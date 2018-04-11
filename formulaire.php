@@ -1,3 +1,7 @@
+<?php
+require_once "src/functions.php";
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
 <head>
@@ -25,7 +29,7 @@
             </ul>
           </div>
           <div class="six columns choose-price">
-            <h3>99€</h3>
+            <h3><?php displayPrice(); ?>€</h3>
             <p>
               * prix incluant le montage et démontage de la batterie
               ainsi que la livraison
