@@ -25,9 +25,22 @@ configButton.addEventListener('click', function () {
 
 // UNITY
 
+const listItem = document.querySelectorAll('.configuration-item');
+
+
 function EditList(info) {
+    console.log(info);
     info.ObjectID;
     info.NewObject;
     info.ObjectList;
     info.ObjectPosition;
+
+    for (var i = 0; i < listItem.length; i++) {
+
+        listItem[i].innerText = info.ObjectList;
+
+    }
 }
+
+
+

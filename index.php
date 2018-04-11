@@ -62,7 +62,7 @@ require_once "src/functions.php";
             <div class="game-container nine columns" id="gameContainer"></div>
 
             <div class="configuration-infos three columns">
-                <div class="configuration-price"><?php getPrice(); ?>€</div>
+                <div class="configuration-price">99,00€</div>
                 <form method="get">
                     <label class="configuration-label" for="configuration-label">Durée</label>
                     <select class="configuration-duration" id="configuration-label" name="select">
@@ -75,7 +75,6 @@ require_once "src/functions.php";
                     <div class="configuration-components">
                         <h3>Composants</h3>
                         <ul class="configuration-list">
-                            <li class="configuration-item">Grande Caisse</li>
                             <li class="configuration-item">Grande Caisse</li>
                             <li class="configuration-item">Grande Caisse</li>
                             <li class="configuration-item">Grande Caisse</li>
@@ -100,7 +99,7 @@ require_once "src/functions.php";
 <script src="3D/TemplateData/UnityProgress.js"></script>
 <script src="3D/Build/UnityLoader.js"></script>
 <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum5.json", {onProgress: UnityProgress});
+    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum7.json", {onProgress: UnityProgress});
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
 <script src="assets/js/main.js"></script>
