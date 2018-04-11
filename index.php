@@ -32,9 +32,8 @@ require_once "src/functions.php";
         </header>
         <div class="name-container">
             <div class="name-title">drag n drum</div>
-            <div class="name-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet
-                asperiores at consequuntur cum cumque dolor doloremque ea eum facere hic iure nam necessitatibus quaerat
-                quis, recusandae reiciendis vero.
+            <div class="name-paragraph">Personnalisez et manipulez votre batterie en 3D temps réel, c'est DRAG N DRUM !
+
             </div>
             <div class="button-configuration">Configurer</div>
             <div class="arrow"><img src="assets/img/arrow.png" alt=""></div>
@@ -46,9 +45,13 @@ require_once "src/functions.php";
     <div class="container">
         <div class="concept-title">Concept</div>
         <div class="row">
-            <div class=" six columns concept-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab
-                assumenda aut beatae consequatur dolores doloribus ducimus earum esse eum harum ipsam, itaque nam natus
-                quis reprehenderit rerum tempora totam.
+            <div class=" six columns concept-text">Vous êtes batteur ? Vous avez un évènement loin de chez vous ( concert, mariage, etc ... )
+                Vous savez que déplacer sa batterie à 500km de chez soi n'est pas une chose évidente ( frais, taille etc ...)
+                Et si vous pouviez avoir une batterie avec des configurations similaire à la votre sur le lieu de votre évènement ?
+                DRAG N DRUM, avec une modélisation 3D temps réel d'une batterie va vous permettre de personnaliser et de manipuler la batterie
+                qui vous correspond ! Vous aurez l'impression que la batterie est à côté de vous ! Génial non ?
+                Evidemment à la suite de votre personnalisation , vous pourrez la louer et un service complet se chargera de la livraison
+                et de l'installion sur le lieu de votre évènement ! Vous n'aurez plus qu'à jouer et repartir .
             </div>
             <div class="six columns concept-image"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt="">
             </div>
