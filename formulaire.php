@@ -40,7 +40,7 @@ require_once "src/functions.php";
   </section>
 
   <section>
-    <form action="" method="post">
+    <form action="./src/rent.php" method="post">
       <div class="container">
         <h3 class="form-title">Facturation</h3>
         <div class="row">
