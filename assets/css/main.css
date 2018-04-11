@@ -131,9 +131,10 @@ body {
     font-size: 2rem; }
   .configuration-components {
     margin-top: 5vh; }
-  .configuration-button {
+  .configuration button {
     width: 200px;
-    padding: 10px;
+    height: 50px;
+    padding: 5px;
     color: white;
     background-color: darkred;
     border-radius: 10px;
@@ -142,15 +143,16 @@ body {
     font-size: 2.5rem;
     margin-top: 10vh;
     cursor: pointer;
-    transition: color 0.2s ease; }
-    .configuration-button a {
+    transition: color 0.2s ease;
+    border: none; }
+    .configuration button a {
       text-decoration: none;
       color: white;
       font-weight: 300; }
-  .configuration-button:hover {
+  .configuration button:hover {
     background-color: white;
     color: darkred; }
-    .configuration-button:hover a {
+    .configuration button:hover a {
       color: darkred; }
 
 .game-container {
