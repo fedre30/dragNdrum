@@ -7,6 +7,8 @@ const concept = document.querySelector('#concept');
 const configMenu = document.querySelector('.config-button');
 const contactButton = document.querySelector('.contact-button');
 const contact = document.querySelector('#contact');
+const backTop = document.querySelector('.back-to-top');
+const introduction = document.querySelector('.introduction');
 
 function animate(time) {
     requestAnimationFrame(animate);
@@ -41,6 +43,10 @@ conceptButton.addEventListener('click', function () {
 
 contactButton.addEventListener('click', function () {
     tweenAnimation(contact);
+});
+
+backTop.addEventListener('click', function () {
+    tweenAnimation(introduction);
 });
 
 

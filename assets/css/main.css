@@ -154,11 +154,34 @@ body {
 .footer {
   width: 100%;
   background-color: #4C0001;
-  padding: 0.5rem; }
-  .footer .telephone {
-    margin: 2vh auto;
+  padding: 2rem; }
+  .footer .back-to-top {
+    text-align: center;
+    margin: 50px auto;
+    cursor: pointer; }
+    .footer .back-to-top p {
+      color: white; }
+    .footer .back-to-top img {
+      transform: rotate(180deg);
+      width: 40px; }
+  .footer h4 {
+    color: white; }
+  .footer .footer-item p {
+    display: inline-block;
     color: white;
-    text-align: center; }
+    margin-left: 2rem;
+    font-weight: 300;
+    vertical-align: middle; }
+  .footer .footer-item img {
+    margin-top: 2rem; }
+  .footer .footer-icon {
+    display: inline-block;
+    width: 40px;
+    margin-right: 50px;
+    margin-top: 50px;
+    cursor: pointer; }
+    .footer .footer-icon img {
+      width: 100%; }
   .footer .copyright {
     margin: 0 auto;
     color: white;

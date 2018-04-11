@@ -90,8 +90,38 @@ require_once "src/functions.php";
 </section>
 
 <footer class="footer" id="contact">
-    <div class="telephone">06.67.98.56.34</div>
-    <p class="copyright">© Groupe 1</p>
+    <div class="container">
+        <div class="back-to-top">
+            <img src="assets/img/arrow.png">
+            <p>Retour en haut</p>
+        </div>
+        <div class="row">
+            <div class="six columns footer-contact">
+                <h4>Nous contacter</h4>
+                <div class="footer-item">
+                    <img src="assets/img/call-answer.png" alt="">
+                    <p>+33643987670</p>
+                </div>
+                <div class="footer-item">
+                    <img src="assets/img/close-envelope%20(1).png" alt="">
+                    <p>dragndrum@drum.com</p>
+                </div>
+                <div class="footer-item">
+                    <img src="assets/img/icon%20(1).png" alt="">
+                    <p>27 bis, rue du Progrès, Montreuil 93100</p>
+                </div>
+
+            </div>
+            <div class="six columns footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="footer-icon"><img src="assets/img/facebook-logo%20(1).png" alt=""></div>
+                <div class="footer-icon"><img src="assets/img/instagram.png" alt=""></div>
+                <div class="footer-icon"><img src="assets/img/twitter-logo.png" alt=""></div>
+                <div class="footer-icon"><img src="assets/img/snapchat.png" alt=""></div>
+            </div>
+        </div>
+        <p class="copyright">© Groupe 1</p>
+    </div>
 </footer>
 
 
