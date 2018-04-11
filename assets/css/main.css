@@ -6,6 +6,9 @@ body {
   background-color: black;
   overflow-x: hidden; }
 
+.bold {
+  font-weight: 400; }
+
 .introduction {
   width: 100%;
   height: 100vh;
@@ -49,12 +52,12 @@ body {
       text-transform: uppercase;
       color: white;
       font-size: 8rem;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 5rem; }
     .background .name-container .name-paragraph {
       font-weight: 300;
-      line-height: 3.5rem;
-      font-size: 2rem; }
+      line-height: 4rem;
+      font-size: 2.5rem; }
     .background .name-container .button-configuration {
       width: 250px;
       background-color: white;
@@ -100,7 +103,7 @@ body {
     color: white;
     font-size: 2rem;
     line-height: 4rem;
-    margin-top: 30vh; }
+    margin-top: 10vh; }
   .concept-image {
     width: 100%;
     height: 80vh; }
@@ -141,7 +144,8 @@ body {
     transition: color 0.2s ease; }
     .configuration-button a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      font-weight: 300; }
   .configuration-button:hover {
     background-color: white;
     color: #4C0001; }

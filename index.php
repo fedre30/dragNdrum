@@ -31,8 +31,8 @@ require_once "src/functions.php";
             </nav>
         </header>
         <div class="name-container">
-            <div class="name-title">drag n drum</div>
-            <div class="name-paragraph">Personnalisez et manipulez votre batterie en 3D temps réel, c'est DRAG N DRUM !
+            <div class="name-title">drag 'n drum</div>
+            <div class="name-paragraph">Personnalisez et manipulez votre batterie en temps réel pour la louer quand vous voulez et où vous le souhaitez!
 
             </div>
             <div class="button-configuration">Configurer</div>
@@ -45,13 +45,13 @@ require_once "src/functions.php";
     <div class="container">
         <div class="concept-title">Concept</div>
         <div class="row">
-            <div class=" six columns concept-text">Vous êtes batteur ? Vous avez un évènement loin de chez vous ( concert, mariage, etc ... )
-                Vous savez que déplacer sa batterie à 500km de chez soi n'est pas une chose évidente ( frais, taille etc ...)
-                Et si vous pouviez avoir une batterie avec des configurations similaire à la votre sur le lieu de votre évènement ?
-                DRAG N DRUM, avec une modélisation 3D temps réel d'une batterie va vous permettre de personnaliser et de manipuler la batterie
-                qui vous correspond ! Vous aurez l'impression que la batterie est à côté de vous ! Génial non ?
+            <div class=" six columns concept-text">Vous êtes <span class="bold">batteur</span>? <br>Vous avez un évènement loin de chez vous ( concert, mariage, etc ... )? <br>
+                Vous savez que déplacer sa batterie à 500km de chez soi n'est pas une chose évidente ( frais, taille etc ...).<br>
+                Et si vous pouviez avoir une batterie avec une configuration qui dépasse celle de votre batterie actuelle et la ramener où vous voulez? <br><br>
+                <span class="bold">DRAG N DRUM</span> vous permet avec une modélisation 3D temps réel d'une batterie de personnaliser et de manipuler la batterie
+                qui vous correspond!<br> Vous aurez l'impression que <span class="bold">la batterie est à côté de vous</span>! <br>Génial non?
                 Evidemment à la suite de votre personnalisation , vous pourrez la louer et un service complet se chargera de la livraison
-                et de l'installion sur le lieu de votre évènement ! Vous n'aurez plus qu'à jouer et repartir .
+                et de l'installion sur le lieu de votre évènement ! Vous n'aurez plus qu'à jouer et repartir.
             </div>
             <div class="six columns concept-image"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt="">
             </div>
