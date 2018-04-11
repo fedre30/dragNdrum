@@ -1,0 +1,62 @@
+.backgroundForm {
+  background-image: url('../img/wallpaper.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.backgroundForm input {
+  opacity: 0.5;
+}
+
+.choose-title {
+  text-align: center;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.choose-price p {
+  width: 60%;
+}
+
+.formInfo input {
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+}
+
+.type input {
+  margin-top: 35px;
+}
+
+.card {
+  margin-left: 2rem;
+}
+
+.form-send {
+  display: flex;
+  justify-content: center;
+}
+
+.form-send input {
+  color: white;
+  opacity: 1;
+}
+
+.visa-logo {
+  height: 80px;
+  margin-left: 5px;
+
+}
+
+.mc-logo {
+  margin-left: 5px;
+  height: 80px;
+}
+
+.mc-check {
+  margin-left: 20px;
+}
