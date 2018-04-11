@@ -65,8 +65,13 @@ require_once "src/functions.php";
             <div class="game-container nine columns" id="gameContainer"></div>
 
             <div class="configuration-infos three columns">
+<<<<<<< HEAD
                 <div class="configuration-price">-,--€</div>
                 <form method="get">
+=======
+                <div id="price" class="configuration-price"><p>00,00€</p></div>
+                <form action="formulaire.php" method="post">
+>>>>>>> b82b1291ca0c34f53289ed9b6e298e691e7303ed
                     <label class="configuration-label" for="configuration-label">Durée</label>
                     <select class="configuration-duration" id="configuration-label" name="select">
                         <option value="0">1 jour</option>
@@ -81,7 +86,7 @@ require_once "src/functions.php";
                         </ul>
                     </div>
 
-                    <div class="configuration-button"><a href="formulaire.php">Louer</a></div>
+                    <button type="submit" name="louer" class="configuration-button"><a href="formulaire.php">Louer</a></button>
                 </form>
             </div>
         </div>
