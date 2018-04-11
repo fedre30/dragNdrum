@@ -6,10 +6,14 @@ body {
   background-color: black;
   overflow-x: hidden; }
 
+.bold {
+  font-weight: 400; }
+
 .introduction {
   width: 100%;
   height: 100vh;
-  background: url("../img/david-menidrey-389997-unsplash.jpg"); }
+  background: url("../img/david-menidrey-389997-unsplash.jpg");
+  background-size: 100%; }
 
 .background {
   width: 100%;
@@ -48,12 +52,12 @@ body {
       text-transform: uppercase;
       color: white;
       font-size: 8rem;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 5rem; }
     .background .name-container .name-paragraph {
       font-weight: 300;
-      line-height: 3.5rem;
-      font-size: 2rem; }
+      line-height: 4rem;
+      font-size: 2.5rem; }
     .background .name-container .button-configuration {
       width: 250px;
       background-color: white;
@@ -99,7 +103,7 @@ body {
     color: white;
     font-size: 2rem;
     line-height: 4rem;
-    margin-top: 30vh; }
+    margin-top: 10vh; }
   .concept-image {
     width: 100%;
     height: 80vh; }
@@ -140,12 +144,13 @@ body {
     transition: color 0.2s ease; }
     .configuration-button a {
       text-decoration: none;
-      color: white; }
-    .configuration-button a:hover {
-      color: #4C0001; }
+      color: white;
+      font-weight: 300; }
   .configuration-button:hover {
     background-color: white;
     color: #4C0001; }
+    .configuration-button:hover a {
+      color: #4C0001; }
 
 .game-container {
   width: 100%;
@@ -154,11 +159,34 @@ body {
 .footer {
   width: 100%;
   background-color: #4C0001;
-  padding: 0.5rem; }
-  .footer .telephone {
-    margin: 2vh auto;
+  padding: 2rem; }
+  .footer .back-to-top {
+    text-align: center;
+    margin: 50px auto;
+    cursor: pointer; }
+    .footer .back-to-top p {
+      color: white; }
+    .footer .back-to-top img {
+      transform: rotate(180deg);
+      width: 40px; }
+  .footer h4 {
+    color: white; }
+  .footer .footer-item p {
+    display: inline-block;
     color: white;
-    text-align: center; }
+    margin-left: 2rem;
+    font-weight: 300;
+    vertical-align: middle; }
+  .footer .footer-item img {
+    margin-top: 2rem; }
+  .footer .footer-icon {
+    display: inline-block;
+    width: 40px;
+    margin-right: 50px;
+    margin-top: 50px;
+    cursor: pointer; }
+    .footer .footer-icon img {
+      width: 100%; }
   .footer .copyright {
     margin: 0 auto;
     color: white;
