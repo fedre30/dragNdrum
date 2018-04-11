@@ -141,11 +141,11 @@ body {
     .configuration-button a {
       text-decoration: none;
       color: white; }
-    .configuration-button a:hover {
-      color: #4C0001; }
   .configuration-button:hover {
     background-color: white;
     color: #4C0001; }
+    .configuration-button:hover a {
+      color: #4C0001; }
 
 .game-container {
   width: 100%;

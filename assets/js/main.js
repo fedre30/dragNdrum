@@ -26,6 +26,8 @@ configButton.addEventListener('click', function () {
 // UNITY
 
 const listItem = document.querySelectorAll('.configuration-item');
+const price = document.querySelector('.configuration-price');
+const select = document.querySelector('select');
 
 
 function EditList(info) {
@@ -35,11 +37,47 @@ function EditList(info) {
     info.ObjectList;
     info.ObjectPosition;
 
-    for (var i = 0; i < listItem.length; i++) {
+    for (let i = 0; i < listItem.length; i++) {
 
         listItem[i].innerText = info.ObjectList;
+        if(info.ObjectID > 0){
+            info.ObjectID.push(info.ObjectList);
+        }
+        
+        price.innerText = (info.ObjectList.length) * 10 + ',00 €';
+        var priceText = (info.ObjectList.length) * 10;
+
+        select.addEventListener('change', function () {
+            if(select.value == 0){
+                price.innerText = (info.ObjectList.length) * 10 + ',00 €';
+            }
+
+            if(select.value == 1){
+                price.innerText = priceText * 1.5 + ',00 €';
+            }
+
+            if(select.value == 2){
+                price.innerText = priceText * 2.5 + ',00 €';
+
+
+            }
+
+            if(select.value == 3){
+                price.innerText = priceText * 3 + ',00 €';
+
+
+            }
+
+            if(select.value == 4){
+                price.innerText = priceText * 3.5 + ',00 €';
+
+
+            }
+        })
+
 
     }
+
 }
 
 

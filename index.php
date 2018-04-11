@@ -62,7 +62,7 @@ require_once "src/functions.php";
             <div class="game-container nine columns" id="gameContainer"></div>
 
             <div class="configuration-infos three columns">
-                <div class="configuration-price">99,00€</div>
+                <div class="configuration-price">00,00€</div>
                 <form method="get">
                     <label class="configuration-label" for="configuration-label">Durée</label>
                     <select class="configuration-duration" id="configuration-label" name="select">
