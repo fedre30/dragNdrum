@@ -24,9 +24,9 @@ require_once "src/functions.php";
         <header class="header">
             <nav class="header-menu">
                 <ul class="header-menuList">
-                    <li class="header-menuItem"><a href="#concept">Concept</a></li>
-                    <li class="header-menuItem"><a href="#configuration">Configuration</a></li>
-                    <li class="header-menuItem"><a href="#contact">Contact</a></li>
+                    <li class="header-menuItem concept-button"><a href="#concept">Concept</a></li>
+                    <li class="header-menuItem config-button"><a href="#configuration">Configuration</a></li>
+                    <li class="header-menuItem contact-button"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>

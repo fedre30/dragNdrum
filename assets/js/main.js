@@ -2,6 +2,11 @@
 
 const configButton = document.querySelector('.button-configuration');
 const configuration = document.querySelector('.configuration');
+const conceptButton = document.querySelector('.concept-button');
+const concept = document.querySelector('#concept');
+const configMenu = document.querySelector('.config-button');
+const contactButton = document.querySelector('.contact-button');
+const contact = document.querySelector('#contact');
 
 function animate(time) {
     requestAnimationFrame(animate);
@@ -10,17 +15,34 @@ function animate(time) {
 
 requestAnimationFrame(animate);
 
-configButton.addEventListener('click', function () {
+function tweenAnimation (section){
     const position = {y: window.scrollY};
     const tween = new TWEEN.Tween(position)
-        .to({y: configuration.getBoundingClientRect().top})
+        .to({y: section.getBoundingClientRect().top})
         .easing(TWEEN.Easing.Quadratic.Out)
         .onUpdate(function () {
             console.log('coucou');
             window.scroll(window.scrollX, position.y);
         })
         .start();
+}
+
+configButton.addEventListener('click', function () {
+   tweenAnimation(configuration);
 });
+
+configMenu.addEventListener('click', function () {
+    tweenAnimation(configuration);
+});
+
+conceptButton.addEventListener('click', function () {
+    tweenAnimation(concept);
+});
+
+contactButton.addEventListener('click', function () {
+    tweenAnimation(contact);
+});
+
 
 
 // UNITY
@@ -43,7 +65,7 @@ function EditList(info) {
         if(info.ObjectID > 0){
             info.ObjectID.push(info.ObjectList);
         }
-        
+
         price.innerText = (info.ObjectList.length) * 10 + ',00 €';
         var priceText = (info.ObjectList.length) * 10;
 
