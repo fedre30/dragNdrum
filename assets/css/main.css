@@ -1,3 +1,17 @@
+body {
+  background: linear-gradient(#070000, #4C0001, #070000); }
+
+.confirm {
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  margin: 0 auto;
+  align-items: center; }
+  .confirm__title {
+    text-align: center;
+    font-size: 40px;
+    color: #fff; }
+
 @font-face {
   font-family: Gotham;
   src: url("../fonts/gotham"); }
