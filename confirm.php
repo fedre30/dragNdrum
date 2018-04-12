@@ -20,7 +20,7 @@ $stmt->execute();
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/_confirm.sass">
     <link rel="shortcut icon" href="3D/TemplateData/favicon.ico">
     <link rel="stylesheet" href="3D/TemplateData/style.css">
 </head>
@@ -28,7 +28,7 @@ $stmt->execute();
 <div class="container">
 <div class="confirm">
 <?php if (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
-<h1 class="confirm__title">
+<h1 class="confirm__title" style="color: #070000">
 Merci Mr, Mme <?=$row["nom"]?> <?=$row["prenom"]?>  d'avoir choisi Drag n Drum pour votre location de batterie 
 </h1>
 </div>

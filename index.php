@@ -30,7 +30,7 @@ require_once "src/functions.php";
             </nav>
         </header>
         <div class="name-container">
-            <div class="name-title">drag n drum</div>
+            <div class="name-title">drag 'n drum</div>
             <div class="name-paragraph">Personnalisez et manipulez votre batterie en 3D temps réel, c'est DRAG N DRUM !
 
             </div>
@@ -45,16 +45,16 @@ require_once "src/functions.php";
         <div class="concept-title">Concept</div>
         <div class="row">
             <div class=" six columns concept-text">Vous êtes <span class="bold">batteur</span>?<br>
-                Vous avez un évènement loin de chez vous ( concert, mariage, etc ... ).<br>
+                Vous avez un événement loin de chez vous ( concert, mariage, etc ... ).<br>
                 Vous savez que déplacer sa batterie à 500km de chez soi n'est pas une chose évidente.<br>
                 Et si vous pouviez avoir une batterie avec une configuration qui dépasse la votre sur le lieu de votre
-                évènement?<br><br>
-                <span class="bold">DRAG 'N DRUM</span> permet aevc une modélisation 3D temps réel d'une batterie de
+                événement?<br><br>
+                <span class="bold">DRAG 'N DRUM</span> permet avec une modélisation 3D temps réel de
                 personnaliser et de manipuler la batterie
                 qui vous correspond.<br> Vous aurez l'impression que la batterie est à côté de vous!<br> Génial non ?
                 Evidemment à la suite de votre personnalisation , vous pourrez la louer et un service complet se
                 chargera de la livraison
-                et de l'installion sur le lieu de votre évènement!<br> Vous n'aurez plus qu'à jouer et repartir!
+                et de l'installation sur le lieu de votre événement!<br> Vous n'aurez plus qu'à jouer et repartir!
             </div>
             <div class="six columns concept-image"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt="">
             </div>
@@ -85,6 +85,8 @@ require_once "src/functions.php";
                         </ul>
                         <input type="hidden" name="hidden-configuration-list" class="hidden-input">
                     </div>
+
+                    <input type="hidden" name="rendered-image" class="rendered-image">
 
                     <input type="submit" name="louer" value="Louer" class="configuration-button"/>
                 </form>
@@ -133,7 +135,7 @@ require_once "src/functions.php";
 <script src="3D/TemplateData/UnityProgress.js"></script>
 <script src="3D/Build/UnityLoader.js"></script>
 <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum22.json", {onProgress: UnityProgress});
+    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum25.json", {onProgress: UnityProgress});
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
 <script src="assets/js/main.js"></script>

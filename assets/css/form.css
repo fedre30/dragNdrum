@@ -30,6 +30,7 @@ form {
 .choose-title {
   text-align: center;
   padding-top: 2vh;
+  margin-bottom: 5rem;
 }
 
 .choose ul {
@@ -71,8 +72,7 @@ form {
 }
 
 .form-send {
-  margin-top: 2rem;
-  margin-left: 23%;
+  margin: 5vh auto;
 }
 
 
@@ -110,7 +110,7 @@ form {
   font-weight: 300;
   cursor: pointer;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 5vh;
   position: relative;
 }
 
@@ -128,4 +128,9 @@ form {
   margin-left: 10px;
   position: absolute;
   width: 25px;
+}
+
+.days{
+  font-size: 3rem;
+  margin-top: 3rem;
 }

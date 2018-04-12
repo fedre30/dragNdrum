@@ -1,17 +1,3 @@
-body {
-  background: linear-gradient(#070000, #4C0001, #070000); }
-
-.confirm {
-  height: 100vh;
-  width: 80vw;
-  display: flex;
-  margin: 0 auto;
-  align-items: center; }
-  .confirm__title {
-    text-align: center;
-    font-size: 40px;
-    color: #fff; }
-
 @font-face {
   font-family: Gotham;
   src: url("../fonts/gotham"); }
@@ -21,7 +7,7 @@ body {
   overflow-x: hidden; }
 
 .bold {
-  font-weight: 400; }
+  font-weight: bold; }
 
 .introduction {
   width: 100%;
@@ -208,5 +194,17 @@ body {
     margin: 0 auto;
     color: white;
     text-align: center; }
+
+.confirm {
+  background: linear-gradient(#070000, darkred, #070000);
+  height: 100vh;
+  width: 80vw;
+  display: flex;
+  margin: 0 auto;
+  align-items: center; }
+  .confirm__title {
+    text-align: center;
+    font-size: 40px;
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

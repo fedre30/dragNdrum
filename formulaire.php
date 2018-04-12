@@ -17,6 +17,7 @@ foreach ($drumSet as $drumElement) {
 $price *= $days;
 $price *= DISCOUNT_POLICY[$days-1];
 
+$renderedImage = $_POST['rendered-image'];
 ?>
 
 <!doctype html>
@@ -37,7 +38,7 @@ $price *= DISCOUNT_POLICY[$days-1];
       <h2 class="choose-title">Vous avez choisi</h2>
       <div class="container">
         <div class="row">
-          <div class="six columns choose">
+          <div class="four columns choose">
             <h3>Composants</h3>
             <ul>
                 <?php foreach ($drumSet as $drumEl) { ?>
@@ -45,13 +46,15 @@ $price *= DISCOUNT_POLICY[$days-1];
                 <?php } ?>
             </ul>
           </div>
-          <div class="six columns choose-price">
-            <h3><?=$price?>€</h3>
+          <div class="four columns choose-price">
+            <h3><?=floor($price)?>€</h3>
             <p>
               * prix incluant le montage et démontage de la batterie
               ainsi que la livraison
             </p>
+              <p class="days"><?=$days?> jours</p>
           </div>
+            <div class="four columns"><img src="data:image/jpeg;base64,<?=$renderedImage?>"/></div>
         </div>
     </div>
   </section>
@@ -152,7 +155,6 @@ $price *= DISCOUNT_POLICY[$days-1];
         </div>
     </form>
   </section>
-  <script src="assets/js/main.js"></script>
 </div>
 </body>
 </html>

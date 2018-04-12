@@ -98,9 +98,13 @@ function drumSetFromUnityInfo(info) {
     drumSet = [];
     for (let idx = 0; idx < info.ObjectList.length; idx++) {
         const elementId = info.ObjectList[idx];
-        const materialId = info.MaterialIDList[idx];
-        const colorId = info.ColorList[idx];
-        const brandId = info.LogoIDList[idx];
+        if (elementId === 0) {
+            continue;
+        }
+
+        const materialId = info.MaterialIDList[idx] || 0;
+        const colorId = info.ColorList[idx] || 0;
+        const brandId = info.LogoIDList[idx] || 0;
 
         drumSet.push({
             element: drumElements[elementId],
@@ -141,9 +145,12 @@ select.addEventListener('change', function() {
 });
 
 function EditList(info) {
+    console.log(info);
+
     try {
         drumSet = drumSetFromUnityInfo(info);
         refreshPricing();
+        document.querySelector('.rendered-image').value = info.RenderedImage;
     } catch (exception) {
         console.error(exception);
     }
