@@ -56,6 +56,7 @@ backTop.addEventListener('click', function () {
 const list = document.querySelector('.configuration-list');
 const price = document.querySelector('.configuration-price');
 const select = document.querySelector('select');
+const hiddenInput = document.querySelector('.hidden-input');
 
 const drumElements = {
     1: { name: 'Charleston', price: 13 },
@@ -126,6 +127,9 @@ function refreshPricing() {
         list.appendChild(li);
 
         drumSetPrice += item.element.price;
+
+        hiddenInput.value = JSON.stringify(drumSet);
+
     });
     
     const totalPrice = drumSetPrice * (parseInt(select.value) + 1);

@@ -1,4 +1,3 @@
-
 <?php
 require_once "src/functions.php";
 ?>
@@ -48,10 +47,13 @@ require_once "src/functions.php";
             <div class=" six columns concept-text">Vous êtes <span class="bold">batteur</span>?<br>
                 Vous avez un évènement loin de chez vous ( concert, mariage, etc ... ).<br>
                 Vous savez que déplacer sa batterie à 500km de chez soi n'est pas une chose évidente.<br>
-                Et si vous pouviez avoir une batterie avec une configuration qui dépasse la votre sur le lieu de votre évènement?<br><br>
-                <span class="bold">DRAG 'N DRUM</span> permet aevc une modélisation 3D temps réel d'une batterie de personnaliser et de manipuler la batterie
+                Et si vous pouviez avoir une batterie avec une configuration qui dépasse la votre sur le lieu de votre
+                évènement?<br><br>
+                <span class="bold">DRAG 'N DRUM</span> permet aevc une modélisation 3D temps réel d'une batterie de
+                personnaliser et de manipuler la batterie
                 qui vous correspond.<br> Vous aurez l'impression que la batterie est à côté de vous!<br> Génial non ?
-                Evidemment à la suite de votre personnalisation , vous pourrez la louer et un service complet se chargera de la livraison
+                Evidemment à la suite de votre personnalisation , vous pourrez la louer et un service complet se
+                chargera de la livraison
                 et de l'installion sur le lieu de votre évènement!<br> Vous n'aurez plus qu'à jouer et repartir!
             </div>
             <div class="six columns concept-image"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt="">
@@ -68,24 +70,26 @@ require_once "src/functions.php";
             <div class="configuration-infos three columns">
                 <div class="configuration-price">-,--€</div>
                 <form method="get">
-                <form action="formulaire.php" method="post">
+                    <form action="formulaire.php" method="post">
 
-                    <label class="configuration-label" for="configuration-label">Durée</label>
-                    <select class="configuration-duration" id="configuration-label" name="select">
-                        <option value="0">1 jour</option>
-                        <option value="1">2 jours</option>
-                        <option value="2">3 jours</option>
-                        <option value="3">4 jours</option>
-                        <option value="4">5 jours</option>
-                    </select>
-                    <div class="configuration-components">
-                        <h3>Composants</h3>
-                        <ul class="configuration-list">
-                        </ul>
-                    </div>
+                        <label class="configuration-label" for="configuration-label">Durée</label>
+                        <select class="configuration-duration" id="configuration-label" name="select">
+                            <option value="0">1 jour</option>
+                            <option value="1">2 jours</option>
+                            <option value="2">3 jours</option>
+                            <option value="3">4 jours</option>
+                            <option value="4">5 jours</option>
+                        </select>
+                        <div class="configuration-components">
+                            <h3>Composants</h3>
+                            <ul class="configuration-list">
+                                <input type="hidden" name="hidden-configuration-list" class="hidden-input">
+                            </ul>
+                        </div>
 
-                    <button type="submit" name="louer" class="configuration-button"><a href="formulaire.php">Louer</a></button>
-                </form>
+                        <button type="submit" name="louer" class="configuration-button"><a
+                                    href="formulaire.php">Louer</a></button>
+                    </form>
             </div>
         </div>
     </div>
