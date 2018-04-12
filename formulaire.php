@@ -16,11 +16,11 @@ require_once "src/functions.php";
 </head>
 <body>
   <div class="backgroundForm">
-    <section class="choose">
+    <section>
       <h2 class="choose-title">Vous avez choisi</h2>
       <div class="container">
         <div class="row">
-          <div class="six columns">
+          <div class="six columns choose">
             <h3>Composants</h3>
             <ul>
               <li>Composant 1</li>
@@ -88,7 +88,8 @@ require_once "src/functions.php";
           </div>
             <div class="row flex">
               <div class="button-back">
-                <a href="index.php">Revenir en arrière</a>
+                <a href="index.php"><img class="back-arrow" src="./assets/img/back.svg"/><p>Revenir en arrière</p>
+                </a>
               </div>
               <div class="form-send">
                 <input type="submit" value="Louez">
