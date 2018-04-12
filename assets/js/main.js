@@ -130,7 +130,7 @@ function refreshPricing() {
     });
     
     const totalPrice = drumSetPrice * (parseInt(select.value) + 1);
-    const discountedPrice = totalPrice * discountPolicy[select.value];
+    const discountedPrice = Math.floor(totalPrice * discountPolicy[select.value]);
 
     price.innerText = `${discountedPrice} €`;
     hiddenInput.value = JSON.stringify(drumSet);
