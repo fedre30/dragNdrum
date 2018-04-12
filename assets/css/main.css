@@ -27,14 +27,15 @@ body {
   width: 100%;
   height: 100vh;
   background: url("../img/david-menidrey-389997-unsplash.jpg");
-  background-size: 100%; }
+  background-size: 100%;
+  z-index: 1000; }
 
 .background {
   width: 100%;
   height: 100vh;
   background-color: black;
-  opacity: 0.9;
-  z-index: 1000; }
+  opacity: 0.8;
+  z-index: 100; }
   .background .header {
     width: 100%; }
     .background .header-menu {
@@ -84,7 +85,7 @@ body {
       cursor: pointer;
       transition: color 0.1s ease; }
     .background .name-container .button-configuration:hover {
-      background-color: #4C0001;
+      background-color: darkred;
       color: white; }
     .background .name-container .arrow {
       width: 80px;
@@ -107,10 +108,10 @@ body {
   font-weight: 300;
   color: white;
   margin-top: 10vh;
-  background: linear-gradient(#070000, #4C0001, #070000); }
+  background: linear-gradient(#070000, darkred, #070000); }
   .concept-title {
     font-size: 8rem;
-    margin: 0 auto;
+    margin: 5vh auto;
     text-align: center;
     font-weight: 400; }
   .concept-text {
@@ -144,9 +145,10 @@ body {
     font-size: 2rem; }
   .configuration-components {
     margin-top: 5vh; }
-  .configuration-button {
+  .configuration button {
     width: 200px;
-    padding: 10px;
+    height: 50px;
+    padding: 5px;
     color: white;
     background-color: darkred;
     border-radius: 10px;
@@ -155,16 +157,17 @@ body {
     font-size: 2.5rem;
     margin-top: 10vh;
     cursor: pointer;
-    transition: color 0.2s ease; }
-    .configuration-button a {
+    transition: color 0.2s ease;
+    border: none; }
+    .configuration button a {
       text-decoration: none;
       color: white;
       font-weight: 300; }
-  .configuration-button:hover {
+  .configuration button:hover {
     background-color: white;
-    color: #4C0001; }
-    .configuration-button:hover a {
-      color: #4C0001; }
+    color: darkred; }
+    .configuration button:hover a {
+      color: darkred; }
 
 .game-container {
   width: 100%;
@@ -172,7 +175,7 @@ body {
 
 .footer {
   width: 100%;
-  background-color: #4C0001;
+  background-color: darkred;
   padding: 2rem; }
   .footer .back-to-top {
     text-align: center;
@@ -195,7 +198,7 @@ body {
     margin-top: 2rem; }
   .footer .footer-icon {
     display: inline-block;
-    width: 40px;
+    width: 30px;
     margin-right: 50px;
     margin-top: 50px;
     cursor: pointer; }

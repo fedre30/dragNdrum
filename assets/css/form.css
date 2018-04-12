@@ -8,10 +8,10 @@ body {
 }
 
 .backgroundForm {
-  background-image: url('../img/wallpaper.jpg');
-  background-size: cover;
+  background: linear-gradient(#070000, darkred, #070000);
   opacity: 0.9;
   height: 100vh;
+  font-weight: 300;
 }
 
 input {
@@ -19,24 +19,47 @@ input {
   opacity: 0.8;
 }
 
-.choose-title {
-  text-align: center;
+form {
+  margin-bottom: 0;
 }
 
-.form-title {
+.choose {
+  padding-left: 10%;
+}
+
+.choose-title {
   text-align: center;
+  padding-top: 2vh;
+}
+
+.choose ul {
+  margin-bottom: 0;
+}
+
+.choose-price {
+  padding-left: 10%;
 }
 
 .choose-price p {
   width: 60%;
+  margin-bottom: 0;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .formInfo input {
-  width: 80%;
+  width: 60%;
 }
 
 .flex {
   display: flex;
+}
+
+.type {
+  margin-top: 6vh;
 }
 
 .type input {
@@ -48,18 +71,18 @@ input {
 }
 
 .form-send {
-  width: 100px;
-  justify-content: center;
-  align-self: center;
-  margin-top: 20px;
-  margin-left: 30%;
+  margin-top: 2rem;
+  margin-left: 23%;
 }
 
 
 .form-send input {
   color: red;
   opacity: 1;
+  width: 250px;
   border: none;
+  font-size: 2.2rem;
+  margin-bottom: 0;
 }
 
 .form-send input:hover {
@@ -87,11 +110,22 @@ input {
   font-weight: 300;
   cursor: pointer;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
+  position: relative;
 }
 
-.button-back a {
+.button-back p {
   color: white;
-  font-size: 2rem;
+  display: inline-block;
   text-decoration: underline;
+  font-size: 2rem;
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+
+.back-arrow {
+  margin-top: 5px;
+  margin-left: 10px;
+  position: absolute;
+  width: 25px;
 }

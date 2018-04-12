@@ -46,11 +46,7 @@ function getPrice()
 
 function displayPrice()
 {
-    $content='<html class="no-js" lang="">
-              <body>
-              <div id="price" class="configuration-price"><p>00,00</p></div>
-              </body>
-              </html>';
+
 
 
     if(isset($_POST['louer']))
@@ -60,16 +56,7 @@ function displayPrice()
 
     if(isset($louer))
     {
-        $dom = new DomDocument;
-        $dom->validateOnParse = true;
-        $dom->LoadHTML($content);
 
-        $element = $dom->getElementById('price')->getElementsByTagName('p');
-
-
-        foreach($element AS $elem) {
-            echo $elem->nodeValue;
-        }
     }
 }
 

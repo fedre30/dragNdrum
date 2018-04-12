@@ -19,14 +19,15 @@ body
   height: 100vh
   background: url("../img/david-menidrey-389997-unsplash.jpg")
   background-size: 100%
+  z-index: 1000
 
 
 .background
   width: 100%
   height: 100vh
   background-color: black
-  opacity: 0.9
-  z-index: 1000
+  opacity: 0.8
+  z-index: 100
 
   .header
     width: 100%
@@ -87,7 +88,7 @@ body
 
 
     .button-configuration:hover
-      background-color: $darkred
+      background-color: darkred
       color: white
 
 
@@ -115,11 +116,11 @@ body
   font-weight: 300
   color: white
   margin-top: 10vh
-  background: linear-gradient(#070000, #4C0001, #070000)
+  background: linear-gradient(#070000, darkred, #070000)
 
   &-title
     font-size: 8rem
-    margin: 0 auto
+    margin: 5vh auto
     text-align: center
     font-weight: 400
 
@@ -164,9 +165,10 @@ body
   &-components
     margin-top: 5vh
 
-  &-button
+  button
     width: 200px
-    padding: 10px
+    height: 50px
+    padding: 5px
     color: white
     background-color: darkred
     border-radius: 10px
@@ -176,6 +178,7 @@ body
     margin-top: 10vh
     cursor: pointer
     transition: color .2s ease
+    border: none
 
     a
       text-decoration: none
@@ -184,12 +187,12 @@ body
 
 
 
-  &-button:hover
+  button:hover
     background-color: white
-    color: $darkred
+    color: darkred
 
     a
-      color: $darkred
+      color: darkred
 
 .game-container
   width: 100%
@@ -198,7 +201,7 @@ body
 
 .footer
   width: 100%
-  background-color: $darkred
+  background-color: darkred
   padding: 2rem
 
   .back-to-top
@@ -229,7 +232,7 @@ body
 
   .footer-icon
     display: inline-block
-    width: 40px
+    width: 30px
     margin-right: 50px
     margin-top: 50px
     cursor: pointer

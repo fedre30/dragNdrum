@@ -30,8 +30,8 @@ require_once "src/functions.php";
             </nav>
         </header>
         <div class="name-container">
-            <div class="name-title">drag 'n drum</div>
-            <div class="name-paragraph">Personnalisez et manipulez votre batterie en temps réel pour la louer quand vous voulez et où vous le souhaitez!
+            <div class="name-title">drag n drum</div>
+            <div class="name-paragraph">Personnalisez et manipulez votre batterie en 3D temps réel, c'est DRAG N DRUM !
 
             </div>
             <div class="button-configuration">Configurer</div>
@@ -44,13 +44,17 @@ require_once "src/functions.php";
     <div class="container">
         <div class="concept-title">Concept</div>
         <div class="row">
-            <div class=" six columns concept-text">Vous êtes <span class="bold">batteur</span>? <br>Vous avez un évènement loin de chez vous ( concert, mariage, etc ... )? <br>
-                Vous savez que déplacer sa batterie à 500km de chez soi n'est pas une chose évidente ( frais, taille etc ...).<br>
-                Et si vous pouviez avoir une batterie avec une configuration qui dépasse celle de votre batterie actuelle et la ramener où vous voulez? <br><br>
-                <span class="bold">DRAG N DRUM</span> vous permet avec une modélisation 3D temps réel d'une batterie de personnaliser et de manipuler la batterie
-                qui vous correspond!<br> Vous aurez l'impression que <span class="bold">la batterie est à côté de vous</span>! <br>Génial non?
-                Evidemment à la suite de votre personnalisation , vous pourrez la louer et un service complet se chargera de la livraison
-                et de l'installion sur le lieu de votre évènement ! Vous n'aurez plus qu'à jouer et repartir.
+            <div class=" six columns concept-text">Vous êtes <span class="bold">batteur</span>?<br>
+                Vous avez un évènement loin de chez vous ( concert, mariage, etc ... ).<br>
+                Vous savez que déplacer sa batterie à 500km de chez soi n'est pas une chose évidente.<br>
+                Et si vous pouviez avoir une batterie avec une configuration qui dépasse la votre sur le lieu de votre
+                évènement?<br><br>
+                <span class="bold">DRAG 'N DRUM</span> permet aevc une modélisation 3D temps réel d'une batterie de
+                personnaliser et de manipuler la batterie
+                qui vous correspond.<br> Vous aurez l'impression que la batterie est à côté de vous!<br> Génial non ?
+                Evidemment à la suite de votre personnalisation , vous pourrez la louer et un service complet se
+                chargera de la livraison
+                et de l'installion sur le lieu de votre évènement!<br> Vous n'aurez plus qu'à jouer et repartir!
             </div>
             <div class="six columns concept-image"><img src="assets/img/drum-kit-3d-model-3ds-fbx-blend-dae.jpg" alt="">
             </div>
@@ -64,8 +68,9 @@ require_once "src/functions.php";
             <div class="game-container nine columns" id="gameContainer"></div>
 
             <div class="configuration-infos three columns">
-                <div id="price" class="configuration-price"><p>00,00€</p></div>
+                <div class="configuration-price">-,--€</div>
                 <form action="formulaire.php" method="post">
+
                     <label class="configuration-label" for="configuration-label">Durée</label>
                     <select class="configuration-duration" id="configuration-label" name="select">
                         <option value="0">1 jour</option>
@@ -77,14 +82,11 @@ require_once "src/functions.php";
                     <div class="configuration-components">
                         <h3>Composants</h3>
                         <ul class="configuration-list">
-                            <li class="configuration-item">Grande Caisse</li>
-                            <li class="configuration-item">Grande Caisse</li>
-                            <li class="configuration-item">Grande Caisse</li>
-                            <li class="configuration-item">Grande Caisse</li>
                         </ul>
+                        <input type="hidden" name="hidden-configuration-list" class="hidden-input">
                     </div>
 
-                    <button type="submit" name="louer" class="configuration-button"><a href="formulaire.php">Louer</a></button>
+                    <input type="submit" name="louer" value="Louer" class="configuration-button"/>
                 </form>
             </div>
         </div>
@@ -131,7 +133,7 @@ require_once "src/functions.php";
 <script src="3D/TemplateData/UnityProgress.js"></script>
 <script src="3D/Build/UnityLoader.js"></script>
 <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum8.json", {onProgress: UnityProgress});
+    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum11.json", {onProgress: UnityProgress});
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
 <script src="assets/js/main.js"></script>
