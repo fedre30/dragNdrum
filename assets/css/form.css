@@ -10,8 +10,9 @@ body {
 .backgroundForm {
   background-image: url('../img/wallpaper.jpg');
   background-size: cover;
-  opacity: 0.8;
-  height: 100vh;
+  opacity: 0.9;
+  height: 110vh;
+  font-weight: 300;
 }
 
 input {
@@ -19,24 +20,45 @@ input {
   opacity: 0.8;
 }
 
-.choose-title {
-  text-align: center;
+form {
+  margin-bottom: 0;
 }
 
-.form-title {
+.choose {
+  padding-left: 10%;
+}
+
+.choose-title {
   text-align: center;
+  padding-top: 2vh;
+}
+
+.choose-price {
+  padding-left: 10%;
 }
 
 .choose-price p {
   width: 60%;
 }
 
+.form-title {
+  text-align: center;
+}
+
+.formInfo {
+  margin-top: 2rem;
+}
+
 .formInfo input {
-  width: 80%;
+  width: 60%;
 }
 
 .flex {
   display: flex;
+}
+
+.type {
+  margin-top: 2vh;
 }
 
 .type input {
@@ -45,19 +67,25 @@ input {
 
 .card {
   margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.card1{
+  margin-top: 1rem;
 }
 
 .form-send {
-  justify-content: center;
-  align-self: center;
   margin-top: 20px;
-  margin-left: 30%;
+  margin-left: 23%;
 }
 
 
 .form-send input {
-  color: red;;
+  color: red;
   opacity: 1;
+  width: 250px;
+  border: none;
+  font-size: 2.2rem;
 }
 
 .form-send input:hover {
@@ -85,10 +113,20 @@ input {
   cursor: pointer;
   text-align: center;
   margin-top: 20px;
+  position: relative;
 }
 
-.button-back a {
+.button-back p {
   color: white;
-  font-size: 2rem;
+  display: inline-block;
   text-decoration: underline;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+.back-arrow {
+  margin-top: 5px;
+  margin-left: 10px;
+  position: absolute;
+  width: 25px;
 }
