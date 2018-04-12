@@ -73,7 +73,7 @@ require_once "src/functions.php";
           <img class="mc-logo" src="./assets/img/mastercard.svg"/>
         </div>
         <div class="row flex">
-          <div class="card1">
+          <div>
             <label for="titulaire">Titulaire</label> <input type="text" name="titulaire">
           </div>
           <div class="card">

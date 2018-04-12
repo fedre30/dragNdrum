@@ -11,7 +11,7 @@ body {
   background-image: url('../img/wallpaper.jpg');
   background-size: cover;
   opacity: 0.9;
-  height: 110vh;
+  height: 100vh;
   font-weight: 300;
 }
 
@@ -33,20 +33,22 @@ form {
   padding-top: 2vh;
 }
 
+.choose ul {
+  margin-bottom: 0;
+}
+
 .choose-price {
   padding-left: 10%;
 }
 
 .choose-price p {
   width: 60%;
+  margin-bottom: 0;
 }
 
 .form-title {
   text-align: center;
-}
-
-.formInfo {
-  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .formInfo input {
@@ -58,7 +60,7 @@ form {
 }
 
 .type {
-  margin-top: 2vh;
+  margin-top: 6vh;
 }
 
 .type input {
@@ -67,15 +69,10 @@ form {
 
 .card {
   margin-left: 2rem;
-  margin-top: 1rem;
-}
-
-.card1{
-  margin-top: 1rem;
 }
 
 .form-send {
-  margin-top: 20px;
+  margin-top: 2rem;
   margin-left: 23%;
 }
 
@@ -86,6 +83,7 @@ form {
   width: 250px;
   border: none;
   font-size: 2.2rem;
+  margin-bottom: 0;
 }
 
 .form-send input:hover {
@@ -113,7 +111,7 @@ form {
   font-weight: 300;
   cursor: pointer;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 2rem;
   position: relative;
 }
 
@@ -123,6 +121,7 @@ form {
   text-decoration: underline;
   font-size: 2rem;
   margin-left: 50px;
+  margin-bottom: 0;
 }
 
 .back-arrow {
