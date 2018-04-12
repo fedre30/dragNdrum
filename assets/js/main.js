@@ -128,7 +128,7 @@ function refreshPricing() {
 
         drumSetPrice += item.element.price;
 
-        hiddenInput.value = JSON.stringify(drumSet);
+
 
     });
     
@@ -136,6 +136,8 @@ function refreshPricing() {
     const discountedPrice = totalPrice * discountPolicy[select.value];
 
     price.innerText = `${discountedPrice} €`;
+
+    hiddenInput.value = JSON.stringify(drumSet);
 }
 
 select.addEventListener('change', function() {
@@ -146,6 +148,7 @@ function EditList(info) {
     try {
         drumSet = drumSetFromUnityInfo(info);
         refreshPricing();
+
     } catch (exception) {
         console.error(exception);
     }

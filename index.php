@@ -69,7 +69,6 @@ require_once "src/functions.php";
 
             <div class="configuration-infos three columns">
                 <div class="configuration-price">-,--€</div>
-                <form method="get">
                     <form action="formulaire.php" method="post">
 
                         <label class="configuration-label" for="configuration-label">Durée</label>
@@ -83,19 +82,16 @@ require_once "src/functions.php";
                         <div class="configuration-components">
                             <h3>Composants</h3>
                             <ul class="configuration-list">
-                                <input type="hidden" name="hidden-configuration-list" class="hidden-input">
                             </ul>
+                            <input type="hidden" name="hidden-configuration-list" class="hidden-input">
                         </div>
-
-                        <button type="submit" name="louer" class="configuration-button"><a
-                                    href="formulaire.php">Louer</a></button>
+                        <input type="submit" name="louer" class="configuration-button" value="Louer"/>
                     </form>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="footer" id="contact">
     <div class="container">
         <div class="back-to-top">
             <img src="assets/img/arrow.png">
@@ -141,3 +137,5 @@ require_once "src/functions.php";
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+

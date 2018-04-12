@@ -44,19 +44,19 @@ function getPrice()
 }
 
 
-function displayPrice()
+
+
+
+function displayComponents()
 {
 
+        if(empty($_POST['hidden-configuration-list'])){
+            header('Location:index.php?error=Pas d\'items dans la liste');
+            exit;
+        }
 
+        echo $_POST['hidden-configuration-list'];
 
-    if(isset($_POST['louer']))
-    {
-        $louer = $_POST['louer'];
-    }
-
-    if(isset($louer))
-    {
-
-    }
 }
 
+?>

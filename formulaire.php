@@ -23,13 +23,11 @@ require_once "src/functions.php";
           <div class="six columns choose">
             <h3>Composants</h3>
             <ul>
-              <li>Composant 1</li>
-              <li>Composant 2</li>
-              <li>Composant 3</li>
+              <li><?php displayComponents(); ?></li>
             </ul>
           </div>
           <div class="six columns choose-price">
-            <h3><?php displayPrice(); ?>€</h3>
+            <h3>€</h3>
             <p>
               * prix incluant le montage et démontage de la batterie
               ainsi que la livraison
