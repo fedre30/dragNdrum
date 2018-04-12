@@ -1,5 +1,7 @@
 <?php
+session_start();
 require_once "src/functions.php";
+require_once "src/database.php";
 ?>
 
 <!doctype html>
@@ -46,23 +48,59 @@ require_once "src/functions.php";
         <div class="row">
           <div class="four columns formInfo">
             <label for="nom">Nom</label> <input type="text" name="nom">
+            <br/>
+             *<?php
+                if (isset($_SESSION['error']["nom"])) {
+                    echo $_SESSION['error']["nom"];
+                }
+                ?>
           </div>
           <div class="four columns formInfo">
             <label for="prenom">Prénom</label> <input type="text" name="prenom">
+            <br/>
+            *<?php
+                if (isset($_SESSION['error']["prenom"])) {
+                    echo $_SESSION['error']["prenom"];
+                }
+                ?>
           </div>
           <div class="four columns formInfo">
             <label for="mail">Adresse e-mail</label> <input type="mail" name="mail">
+            <br/>
+            *<?php
+                if (isset($_SESSION['error']["mail"])) {
+                    echo $_SESSION['error']["mail"];
+                }
+                ?>
           </div>
         </div>
         <div class="row">
           <div class="four columns formInfo">
-            <label for="adresse">Adresse</label> <input type="text" name="adresse">
+            <label for="adresse">Adresse</label> <input type="text" name="adress">
+            <br/>
+            *<?php
+                if (isset($_SESSION['error']["adress"])) {
+                    echo $_SESSION['error']["adress"];
+                }
+                ?>
           </div>
           <div class="four columns formInfo">
             <label for="telephone">Téléphone</label> <input type="text" name="telephone">
+            <br/>
+            *<?php
+                if (isset($_SESSION['error']["telephone"])) {
+                    echo $_SESSION['error']["telephone"];
+                }
+                ?>
           </div>
           <div class="four columns formInfo">
-            <label for="date">Date</label> <input type="date" name="date">
+            <label for="date">Date</label> <input type="date" name="day">
+            <br/>
+            *<?php
+                if (isset($_SESSION['error']["day"])) {
+                    echo $_SESSION['error']["day"];
+                }
+                ?>
           </div>
         </div>
 
