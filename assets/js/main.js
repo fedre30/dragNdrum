@@ -94,10 +94,8 @@ const discountPolicy = [1, 0.95, 0.9, 0.85, 0.75];
 
 let drumSet = [];
 
-
-
 function drumSetFromUnityInfo(info) {
-    const drumSet = [];
+    drumSet = [];
     for (let idx = 0; idx < info.ObjectList.length; idx++) {
         const elementId = info.ObjectList[idx];
         const materialId = 0; // pas encore envoyé par unity
@@ -128,7 +126,6 @@ function refreshPricing() {
 
         drumSetPrice += item.element.price;
 
-        hiddenInput.value = JSON.stringify(drumSet);
 
     });
     
@@ -136,6 +133,7 @@ function refreshPricing() {
     const discountedPrice = totalPrice * discountPolicy[select.value];
 
     price.innerText = `${discountedPrice} €`;
+    hiddenInput.value = JSON.stringify(drumSet);
 }
 
 select.addEventListener('change', function() {

@@ -1,5 +1,18 @@
 <?php
 require_once "src/functions.php";
+
+const DISCOUNT_POLICY=[1, 0.95, 0.9, 0.85, 0.75];
+
+$drumSetAsJson = $_POST['hidden-configuration-list'];
+$drumSet       = json_decode($drumSetAsJson, true);
+$days          = $_POST['select'] + 1;
+
+$price = 0;
+foreach ($drumSet as $drumElement) {
+    $price += $drumElement['element']['price'];
+}
+$price *= $days;
+$price *= DISCOUNT_POLICY[$days-1];
 ?>
 
 <!doctype html>
@@ -23,13 +36,13 @@ require_once "src/functions.php";
           <div class="six columns choose">
             <h3>Composants</h3>
             <ul>
-              <li>Composant 1</li>
-              <li>Composant 2</li>
-              <li>Composant 3</li>
+                <?php foreach ($drumSet as $drumEl) { ?>
+                    <li><?=$drumEl['element']['name']?> - <?=$drumEl['brand']['name']?> - <?=$drumEl['material']['name']?> - <?=$drumEl['color']['name']?> - <?=$drumEl['element']['price']?> €</li>
+                <?php } ?>
             </ul>
           </div>
           <div class="six columns choose-price">
-            <h3><?php displayPrice(); ?>€</h3>
+            <h3><?=$price?>€</h3>
             <p>
               * prix incluant le montage et démontage de la batterie
               ainsi que la livraison
@@ -41,6 +54,7 @@ require_once "src/functions.php";
 
   <section>
     <form action="./src/rent.php" method="post">
+        <input type="hidden" name="hidden-configuration-list" value="<?= htmlentities($drumSetAsJson) ?>">
       <div class="container">
         <h3 class="form-title">Facturation</h3>
         <div class="row">

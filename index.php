@@ -69,27 +69,25 @@ require_once "src/functions.php";
 
             <div class="configuration-infos three columns">
                 <div class="configuration-price">-,--€</div>
-                <form method="get">
-                    <form action="formulaire.php" method="post">
+                <form action="formulaire.php" method="post">
 
-                        <label class="configuration-label" for="configuration-label">Durée</label>
-                        <select class="configuration-duration" id="configuration-label" name="select">
-                            <option value="0">1 jour</option>
-                            <option value="1">2 jours</option>
-                            <option value="2">3 jours</option>
-                            <option value="3">4 jours</option>
-                            <option value="4">5 jours</option>
-                        </select>
-                        <div class="configuration-components">
-                            <h3>Composants</h3>
-                            <ul class="configuration-list">
-                                <input type="hidden" name="hidden-configuration-list" class="hidden-input">
-                            </ul>
-                        </div>
+                    <label class="configuration-label" for="configuration-label">Durée</label>
+                    <select class="configuration-duration" id="configuration-label" name="select">
+                        <option value="0">1 jour</option>
+                        <option value="1">2 jours</option>
+                        <option value="2">3 jours</option>
+                        <option value="3">4 jours</option>
+                        <option value="4">5 jours</option>
+                    </select>
+                    <div class="configuration-components">
+                        <h3>Composants</h3>
+                        <ul class="configuration-list">
+                        </ul>
+                        <input type="hidden" name="hidden-configuration-list" class="hidden-input">
+                    </div>
 
-                        <button type="submit" name="louer" class="configuration-button"><a
-                                    href="formulaire.php">Louer</a></button>
-                    </form>
+                    <input type="submit" name="louer" value="Louer" class="configuration-button"/>
+                </form>
             </div>
         </div>
     </div>
