@@ -58,18 +58,18 @@ const price = document.querySelector('.configuration-price');
 const select = document.querySelector('select');
 
 const drumElements = {
-    1: { name: 'Charleston', price: 15, },
-    2: { name: 'Cymbales', price: 20, },
-    3: { name: 'Tom', price: 12, },
-    4: { name: 'Grosse Caisse', price: 12, },
-    5: { name: 'Caisse Caisse', price: 10, },
-    6: { name: 'Tom Basse', price: 12, },
+    1: { name: 'Charleston', price: 13 },
+    2: { name: 'Cymbales', price: 17 },
+    3: { name: 'Tom', price: 9 },
+    4: { name: 'Grosse Caisse', price: 10 },
+    5: { name: 'Caisse Caisse', price: 8 },
+    6: { name: 'Tom Basse', price: 10 }
 };
 
 const drumMaterials = {
-    0: { name: 'Bois', },
-    1: { name: 'Metal', },
-    2: { name: 'Plastique', },
+    0: { name: 'Bois' },
+    1: { name: 'Metal' },
+    2: { name: 'Plastique' }
 };
 
 const drumColors = {
@@ -81,17 +81,19 @@ const drumColors = {
     5: { name: 'Bleu' },
     6: { name: 'Marron' },
     7: { name: 'Sable' },
-    8: { name: 'Beige' },
+    8: { name: 'Beige' }
 };
 
 const drumBrands = {
     0: { name: 'DW' },
     1: { name: 'Yamaha' },
-    2: { name: 'Pearl' },
+    2: { name: 'Pearl' }
 };
 const discountPolicy = [1, 0.95, 0.9, 0.85, 0.75];
 
 let drumSet = [];
+
+
 
 function drumSetFromUnityInfo(info) {
     const drumSet = [];
@@ -105,7 +107,7 @@ function drumSetFromUnityInfo(info) {
             element: drumElements[elementId],
             material: drumMaterials[materialId],
             color: drumColors[colorId],
-            brand: drumBrands[brandId],
+            brand: drumBrands[brandId]
         });
     }
     return drumSet;

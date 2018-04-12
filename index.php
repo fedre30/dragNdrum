@@ -131,7 +131,7 @@ require_once "src/functions.php";
 <script src="3D/TemplateData/UnityProgress.js"></script>
 <script src="3D/Build/UnityLoader.js"></script>
 <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum9.json", {onProgress: UnityProgress});
+    var gameInstance = UnityLoader.instantiate("gameContainer", "3D/Build/Drum11.json", {onProgress: UnityProgress});
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
 <script src="assets/js/main.js"></script>

@@ -8,8 +8,7 @@ body {
 }
 
 .backgroundForm {
-  background-image: url('../img/wallpaper.jpg');
-  background-size: cover;
+  background: linear-gradient(#070000, darkred, #070000);
   opacity: 0.9;
   height: 100vh;
   font-weight: 300;
