@@ -1,9 +1,13 @@
-Membres groupes DRAG N DRUM :
+# DRAG 'N DRUM
 
-- AMAR BENSABER Hichem
+## Membres:
 
-- KARACA Yasin
+*   AMAR BENSABER Hichem
 
-- BIARD Sofian
+*   KARACA Yasin
 
-- ALFANO Federica
+*   TRAVAILLEUR Lorick
+
+*   ALFANO Federica
+
+*   BIARD Sofian

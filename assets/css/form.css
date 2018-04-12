@@ -91,6 +91,7 @@ form {
 .form-send input:hover {
   background-color: darkred;
   color: white;
+  border: none;
 }
 
 .visa-logo {

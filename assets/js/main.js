@@ -53,60 +53,96 @@ backTop.addEventListener('click', function () {
 
 // UNITY
 
-const listItem = document.querySelectorAll('.configuration-item');
+const list = document.querySelector('.configuration-list');
 const price = document.querySelector('.configuration-price');
 const select = document.querySelector('select');
 
+const drumElements = {
+    1: { name: 'Charleston', price: 15, },
+    2: { name: 'Cymbales', price: 20, },
+    3: { name: 'Tom', price: 12, },
+    4: { name: 'Grosse Caisse', price: 12, },
+    5: { name: 'Caisse Caisse', price: 10, },
+    6: { name: 'Tom Basse', price: 12, },
+};
 
+const drumMaterials = {
+    0: { name: 'Bois', },
+    1: { name: 'Metal', },
+    2: { name: 'Plastique', },
+};
 
-function EditList(info) {
-    console.log(info);
-    info.ObjectID;
-    info.NewObject;
-    info.ObjectList;
-    info.ObjectPosition;
+const drumColors = {
+    0: { name: 'Noir' },
+    1: { name: 'Gris' },
+    2: { name: 'Gris clair' },
+    3: { name: 'Vert' },
+    4: { name: 'Rouge' },
+    5: { name: 'Bleu' },
+    6: { name: 'Marron' },
+    7: { name: 'Sable' },
+    8: { name: 'Beige' },
+};
 
-    for (let i = 0; i < listItem.length; i++) {
+const drumBrands = {
+    0: { name: 'DW' },
+    1: { name: 'Yamaha' },
+    2: { name: 'Pearl' },
+};
+const discountPolicy = [1, 0.95, 0.9, 0.85, 0.75];
 
-        listItem[i].innerText = info.ObjectList;
-        if(info.ObjectID > 0){
-            info.ObjectID.push(info.ObjectList);
-        }
+let drumSet = [];
 
-        price.innerText = (info.ObjectList.length) * 10 + ',00 €';
-        var priceText = (info.ObjectList.length) * 10;
+function drumSetFromUnityInfo(info) {
+    const drumSet = [];
+    for (let idx = 0; idx < info.ObjectList.length; idx++) {
+        const elementId = info.ObjectList[idx];
+        const materialId = 0; // pas encore envoyé par unity
+        const colorId = 0; // pas encore envoyé par unity
+        const brandId = 0; // pas encore envoyé par unity
 
-        select.addEventListener('change', function () {
-            if(select.value == 0){
-                price.innerText = (info.ObjectList.length) * 10 + ',00 €';
-            }
+        drumSet.push({
+            element: drumElements[elementId],
+            material: drumMaterials[materialId],
+            color: drumColors[colorId],
+            brand: drumBrands[brandId],
+        });
+    }
+    return drumSet;
+}
 
-            if(select.value == 1){
-                price.innerText = priceText * 1.5 + ',00 €';
-            }
-
-            if(select.value == 2){
-                price.innerText = priceText * 2.5 + ',00 €';
-
-
-            }
-
-            if(select.value == 3){
-                price.innerText = priceText * 3 + ',00 €';
-
-
-            }
-
-            if(select.value == 4){
-                price.innerText = priceText * 3.5 + ',00 €';
-
-
-            }
-        })
-
-
+function refreshPricing() {
+    while (list.hasChildNodes()) {
+        list.removeChild(list.lastChild);
     }
 
+    let drumSetPrice = 0;
+    drumSet.forEach(function(item) {
+        const li = document.createElement("li");
+        li.classList.add('configuration-item');
+        li.innerText = `${item.element.name} - ${item.brand.name} - ${item.material.name}: ${item.element.price} €`;
+        list.appendChild(li);
+
+        drumSetPrice += item.element.price;
+    });
+    
+    const totalPrice = drumSetPrice * (parseInt(select.value) + 1);
+    const discountedPrice = totalPrice * discountPolicy[select.value];
+
+    price.innerText = `${discountedPrice} €`;
+}
+
+select.addEventListener('change', function() {
+    refreshPricing();
+});
+
+function EditList(info) {
+    try {
+        drumSet = drumSetFromUnityInfo(info);
+        refreshPricing();
+    } catch (exception) {
+        console.error(exception);
+    }
 }
 
 
