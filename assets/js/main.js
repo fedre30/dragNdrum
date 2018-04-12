@@ -87,22 +87,20 @@ const drumColors = {
 
 const drumBrands = {
     0: { name: 'DW' },
-    1: { name: 'Yamaha' },
-    2: { name: 'Pearl' }
+    1: { name: 'Pearl' },
+    2: { name: 'Yamaha' }
 };
 const discountPolicy = [1, 0.95, 0.9, 0.85, 0.75];
 
 let drumSet = [];
 
-
-
 function drumSetFromUnityInfo(info) {
-    const drumSet = [];
+    drumSet = [];
     for (let idx = 0; idx < info.ObjectList.length; idx++) {
         const elementId = info.ObjectList[idx];
-        const materialId = 0; // pas encore envoyé par unity
-        const colorId = 0; // pas encore envoyé par unity
-        const brandId = 0; // pas encore envoyé par unity
+        const materialId = info.MaterialIDList[idx];
+        const colorId = info.ColorList[idx];
+        const brandId = info.LogoIDList[idx];
 
         drumSet.push({
             element: drumElements[elementId],
@@ -123,20 +121,18 @@ function refreshPricing() {
     drumSet.forEach(function(item) {
         const li = document.createElement("li");
         li.classList.add('configuration-item');
-        li.innerText = `${item.element.name} - ${item.brand.name} - ${item.material.name}: ${item.element.price} €`;
+        li.innerText = `${item.element.name} - ${item.brand.name} - ${item.material.name} - ${item.color.name} : ${item.element.price} €`;
         list.appendChild(li);
 
         drumSetPrice += item.element.price;
 
 
-
     });
     
     const totalPrice = drumSetPrice * (parseInt(select.value) + 1);
-    const discountedPrice = totalPrice * discountPolicy[select.value];
+    const discountedPrice = Math.floor(totalPrice * discountPolicy[select.value]);
 
     price.innerText = `${discountedPrice} €`;
-
     hiddenInput.value = JSON.stringify(drumSet);
 }
 
@@ -148,7 +144,6 @@ function EditList(info) {
     try {
         drumSet = drumSetFromUnityInfo(info);
         refreshPricing();
-
     } catch (exception) {
         console.error(exception);
     }
